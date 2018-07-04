@@ -11,7 +11,7 @@
         android:paddingLeft="2dp"
         android:paddingRight="2dp"
         android:text="Shra1"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold" />
 
     <TextView
@@ -21,5 +21,6 @@
         android:padding="2dp"
         android:text="Shra1"
         android:textColor="@color/black"
-        android:textSize="10dp" />
+        android:textSize="9dp"
+        android:fontFamily="sans-serif-condensed"/>
 </LinearLayout>
