@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/date_selector_bg"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ibPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#0fff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/left" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:lines="1"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="04-05-2018" />
+
+
+    <ImageButton
+        android:id="@+id/ibNext"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#0fff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/right" />
+
+</LinearLayout>

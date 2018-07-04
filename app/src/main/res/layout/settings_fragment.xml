@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cbSFStartServiceAutomatically"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start service automatically" />
+
+        <TextView
+            android:id="@+id/tvSFServiceStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="Service is not running, Click to start!" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBatteryOptimizationStatus"
+        style="@style/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello" />
+
+    <RadioGroup
+        style="@style/card"
+        android:id="@+id/rgSFBatteryDataSaveType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbSFSaveBatteryDataPeriodically"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Save Batterydata every 20 Seconds (More Efficient)" />
+
+        <RadioButton
+            android:id="@+id/rbSFSaveBatteryDataOnScreenOnOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Battery data when phone wakes" />
+    </RadioGroup>
+
+</LinearLayout>
